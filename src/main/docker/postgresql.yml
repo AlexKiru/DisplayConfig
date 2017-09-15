@@ -1,0 +1,11 @@
+version: '2'
+services:
+    displayconfig-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/DisplayConfig/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=DisplayConfig
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
